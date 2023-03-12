@@ -1,13 +1,8 @@
-| Deadline | Folder name | Branch name |
-| ----------- | ------------- | ------------- |
-|  | cssBayan | gh-pages |
+| Deadline | Folder name | Branch name | Deploy |
+| ----------- | ------------- | ------------- | --- |
+| 13.03.2023  | cssBayan | feature | [gh-pages]() |
 
 # Task: CSS Bayan
-
-You should create an accordion with HTML and CSS only.
-
-<kbd>![screenshot](assets/accordion.png)</kbd>
-
 ## Functional requirements:
 1. Design is at your discretion, but the layout of an accordion should include a meme image, text, and an icon. The placement of these elements should match the provided above example image;
 2. Implement responsive design with three breakpoints. Accordion is displayed correctly at `mobile 320x568, tablet 820x1180, desktop 1920×1080`;
@@ -20,44 +15,6 @@ You should create an accordion with HTML and CSS only.
 9. Change the cursor when it is hovering over the accordion;
 10. Initially, the first meme should be expanded (chosen/selected);
 11. Font size should be changed at each device (mobile, tablet, desktop)
-
-❗ If it's not clear how the accordion should behave - take a look at the Clarifications section below, recoded gifs and their scenarios.
-
-## Clarifications - Accordion behavior:
-
-### Note 1. commonHover.gif.
-<kbd>![screenshot](assets/commonHover.gif)</kbd>
-
-***Recorded scenario for desktop device:***
-  - User moves cursor over the accordion (hover)
-  - User removes cursor (hover) from the accordion
-
-### Note 2. hoverOverItem.gif.
-<kbd>![screenshot](assets/hoverOverItem.gif)</kbd>
-
-***Recorded scenario for desktop device:***
-  - the 4th meme is already chosen (clicked) by the user
-  - User moves cursor over the accordion (hover) - over 4th meme
-  - User moves cursor over 5th meme (hover)
-  - User moves cursor over 4th meme (hover)
-  - User moves cursor over 3rd meme (hover)
-  - User moves cursor over 2nd meme (hover)
-  - User moves cursor over 1st meme (hover)
-  - User removes cursor (hover) from the accordion
-  - the 4th meme stays be chosen
-
-### Note 3. clickActiveItem.gif.
-<kbd>![screenshot](assets/clickActiveItem.gif)</kbd>
-
-***Recorded scenario for desktop device:***
-  - the 4th meme is already chosen (clicked) by the user
-  - User moves cursor over 4th meme (hover)
-  - User moves cursor over 5th meme (hover)
-  - User moves cursor over 4th meme (hover)
-  - User moves cursor over 3rd meme (hover)
-  - User moves cursor over 2nd meme (hover)
-  - User clicks on the second meme. It becomes chosen (active, clicked). The 4th meme becomes not chosen
-  - User removes cursor (hover) from the accordion
 
 ## Repository requirements and how to submit task:
 1. Create public repository `cssBayan`
