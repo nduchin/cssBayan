@@ -1,5 +1,4 @@
 :root{
-  --wrap-width: calc(min(100% , 40em));
   --acc-cap-h: 1.5em;
   --col1: #790f05;
   --col1alt: #000000;
@@ -27,7 +26,7 @@ li:last-child{
   margin-bottom: 0.5em;
 }
 .wrap{
-  width: var(--wrap-width);
+  max-width: 900px;
   min-height: 100vh;
   box-sizing: border-box;
   display: flex;
@@ -101,25 +100,47 @@ footer{
   height: 3em;
   width: auto;
 }
-.acc:has(.acc__radio:checked), .acc:hover{
+.acc:has(.acc__radio:checked){
   background-color: var(--col3);
 }
 .acc:has(.acc__radio:checked) .acc-cap__img{
   transform: rotate(-225deg);
   opacity: 100%;
 }
-.acc:has(.acc__radio:checked) .acc-content, .acc:hover .acc-content{
+.acc:has(.acc__radio:checked) .acc-content{
   padding: 0.5em;
 }
-.acc:has(.acc__radio:checked) .acc-content__img, .acc:hover .acc-content__img{
+.acc:has(.acc__radio:checked) .acc-content__img{
   max-width: 100%;
 }
 .acc:has(.acc__radio:checked) .acc-cap{
   background-color: var(--col2alt);
 }
-.acc-list:hover .acc-cap__title, .acc:has(.acc__radio:checked) .acc-cap__title{
+.acc:has(.acc__radio:checked) .acc-cap__title{
   color: var(--col1alt);
 }
-.acc-list:hover .acc-cap__img{
-  opacity: 100%;
+@media (hover: hover){
+  .acc-cap__img{
+    opacity: 0;
+  }
+  .acc-list:hover .acc-cap__img{
+    opacity: 100%;
+  }
+  .acc:hover{
+    background-color: var(--col3);
+  }
+  .acc:hover .acc-content{
+    padding: 0.5em;
+  }
+  .acc:hover .acc-content__img{
+    max-width: 100%;
+  }
+  .acc-list:hover .acc-cap__title{
+    color: var(--col1alt);
+  }
+}
+@media (hover: none){
+  .acc-cap__img{
+    opacity: 100%;
+  }
 }
