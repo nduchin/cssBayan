@@ -3,7 +3,7 @@
   --acc-cap-h: 1.5em;
   --col1: #000000;
   --col2: #a08c8c;
-  --col3: #f3eede;
+  --col3: #e6dbb6;
   --col4: #f8f5ef;
 }
 *{
@@ -19,12 +19,15 @@ body{
 li:not(:last-child){
   margin-bottom: 2em;
 }
+li:last-child{
+  margin-bottom: 1em;
+}
 .wrap{
   width: var(--wrap-width);
   min-height: 100vh;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1em 1em 0;
 }
 .h1 {
   width: inherit;
@@ -53,5 +56,26 @@ li:not(:last-child){
   height: var(--acc-cap-h);
 }
 .acc-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0.5em;
+}
+.acc-content__img{
+  width: 100%;
+  height: auto;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: var(--col2);
+}
+.footer-link{
+  cursor: pointer;
+}
+.footer-link-img{
+  height: 3em;
+  width: auto;
 }
