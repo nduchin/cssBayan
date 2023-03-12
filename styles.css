@@ -2,7 +2,8 @@
   --wrap-width: calc(min(100% , 40em));
   --acc-cap-h: 1.5em;
   --col1: #000000;
-  --col2: #a08c8c;
+  --col2alt: #3b2826;
+  --col2: #c0a8a8;
   --col3: #e6dbb6;
   --col4: #f8f5ef;
   --transition: 0.6s ease-in-out
@@ -53,7 +54,7 @@ li:last-child{
   padding: 0.5em 1em;
   background-color: var(--col2);
 }
-.acc__checkbox{
+.acc__radio{
   display: none;
 }
 .acc-cap__title{
@@ -93,12 +94,12 @@ footer{
   height: 3em;
   width: auto;
 }
-.acc:has(.acc__checkbox:checked) .acc-cap__img{
+.acc:has(.acc__radio:checked) .acc-cap__img{
   transform: rotate(-225deg)
 }
-.acc:has(.acc__checkbox:checked) .acc-content{
+.acc:has(.acc__radio:checked) .acc-content{
   padding: 0.5em;
 }
-.acc:has(.acc__checkbox:checked) .acc-content__img{
+.acc:has(.acc__radio:checked) .acc-content__img{
   max-width: 100%;
 }
